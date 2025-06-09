@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        .audio-media,
+        .image-media,
+        .video-media {
+            border: 3px solid #aaa;
+            padding: 10px;
+            min-width: 300px;
+        }
+
+        .but {
+            border: 2px solid #FF6F61;
+            background-color: #FFFFF0;
+            width: 400px;
+            margin-bottom: 8px;
+        }
+
+        .media-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            text-align: center;
+            border: 3px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .social-icons {
+            display: inline-block;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer p {
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #FF6F61;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+        <h1 style="text-align: center;"><span style="font-size: 160%; color: red;">M</span>EDIA BY <span
+                style="font-size:160%;color:purple">S</span>k.<span style="font-size: 160%;color:red;">A</span>ftab</h1>
+    <hr>
+
+    <div class="media-container">
+        <div class="audio-media">
+            <h2 style="border:1px solid #aaa;color:#20C997;width:250px;">Audio (.mp3) media</h2>
+            <div class="but">
+                <p>AUDIO 1-DEFAULT</p>
+                <audio src="audio.mp3" controls></audio>
+            </div>
+            <div class="but">
+                <p>AUDIO 2-AUTOPLAY</p>
+                <audio src="audio.mp3" controls autoplay></audio>
+            </div>
+            <div class="but">
+                <p>AUDIO 3-LOOP</p>
+                <audio src="audio.mp3" controls loop></audio>
+            </div>
+            <div class="but">
+                <p>AUDIO 4-MUTED</p>
+                <audio src="audio.mp3" controls muted></audio>
+            </div>
+            <div class="but">
+                <p>AUDIO 5-PRELOAD</p>
+                <audio src="audio.mp3" controls preload="auto"></audio>
+            </div>
+        </div>
+        <div class="image-media">
+            <h2 style="border:1px solid #aaa;color:#20C997;width:150px;">Image media</h2>
+            <p style="text-align: center;">IMAGE 1</p>
+            <img src="n1.jpg" alt="IMAGE 1" height="150px" width="250px">
+            <hr>
+            <p style="text-align: center;">IMAGE 2</p>
+            <img src="n2.jpg" alt="IMAGE 2" height="150px" width="250px">
+            <hr>
+            <p style="text-align: center;">IMAGE 3</p>
+            <img src="n4.jpg" alt="IMAGE 3" height="150px" width="250px">
+            <hr>
+        </div>
+        <div class="video-media">
+            <h2 style="border:1px solid #aaa;color:#20C997;width:250px;">Video (.mp4) media</h2>
+            <p style="text-align: center;">VIDEO 1</p>
+            <video src="video.mp4" height="150px" width="250px" controls></video>
+            <hr>
+            <p style="text-align: center;">VIDEO 2-autoplay loop</p>
+            <video src="video.mp4" height="150px" width="250px" controls autoplay loop></video>
+            <hr>
+            <p style="text-align: center;">VIDEO 3-muted preload</p>
+            <video src="video.mp4" height="150px" width="250px" controls muted preload="auto"></video>
+            <hr>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy2025,All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook">FACEBOOK</i></a>|
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter">TWITTER</i></a>|
+        </div>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram">INSTAGRAM</i></a>|
+        </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin">LINKEDIN</i></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
